@@ -30,7 +30,7 @@ variable "configlet_scope" {
   type = string
   description = <<-EOF
     {
-      "description": "Expression defining which devices the configlet should be applied to",
+      "description": "Selects devices where configlet should be applied. Example: `hostname in [\"spine1\", \"spine2\"]`",
       "display_name": "Configlet Scope",
       "validators": [
         {
